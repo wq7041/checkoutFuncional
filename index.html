@@ -1,14 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout de Compra</title>
+    <title>Checkout de Compras</title>
     <link rel="stylesheet" href="style.css">
-    <script src="aura.js" defer></script>
-    
 </head>
 <body>
-    
+   <div id="card">
+    <div>
+        <h1>CheckOut de Compras</h1>
+    </div>
+    <div id="inputs">
+        <label for="preco">Preço do Produto (R$)</label>
+        <input type="number" step="0.01" placeholder="Ex: 100.00" id="preco">
+        
+        <label for="frete">Valor do Frete (R$)</label>
+        <input type="number" step="0.01" placeholder="Ex: 15.00" id="frete">
+    </div>
+    <div>
+        <h3>Forma de Pagamento:</h3>
+    </div>
+    <div id="botoes">
+        <div id="botao1">
+            <!-- Corrigido: Todos chamam a função 'pagamento' e usam aspas simples padrão -->
+            <input type="button" value="PIX(-10%)" id="b1" onclick="pagamento('Pix')">
+            <input type="button" value="Dinheiro(-5%)" id="b2" onclick="pagamento('Dinheiro')">
+        </div>
+        <div id="botao2">
+            <input type="button" value="Cartão à Vista" id="b3" onclick="pagamento('Cartao')">
+            <input type="button" value="Parcelado(+10%)" id="b4" onclick="pagamento('Parcelado')">
+        </div>
+    </div>
+    <div>
+        <p id="forma">Forma:</p>
+        <p id="resultado">Total:</p>
+    </div>
+   </div>
+   <script src="aura.js"></script>
 </body>
 </html>
