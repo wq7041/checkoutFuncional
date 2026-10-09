@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(224, 233, 230);
+    text-align: center;
+}
+#card{
+    width: 70%;
+    background-color: rgb(113, 238, 194);
+    margin: 0 auto;
+}
+#inputs{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 20px;
+}
+input{
+    border-radius: 10px;
+    width: 70%;
+    font-size: x-large;
+}
+label{
+    font-size: x-large;
+}
+#botoes{
+    text-align: center;  
+ 
+}
+/* #botao1{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+ 
+}
+#botao2{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+   
+} */
+#b1{
+    background-color: blueviolet;
+    padding: 15px;
+    color: aliceblue;
+}
+#b2{
+    background-color: rgb(47, 8, 189);
+    padding: 15px;
+    color: aliceblue;
+}
+#b3{
+    background-color: rgb(70, 232, 11);
+    padding: 15px;
+    color: aliceblue;
+}
+#b4{
+    background-color: rgb(243, 11, 189);
+    padding: 15px;
+    color: aliceblue;
+}
+#forma{
+    font-size: x-large;
+}
+
+#resultado{
+    font-size: x-large;
+}
